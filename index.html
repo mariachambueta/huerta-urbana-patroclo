@@ -14,17 +14,35 @@
 
 <body>
 
-<!-- NAVBAR -->
+<header>
 
-<header class="navbar">
+<div class="logo">
+Huerta Urbana Patroclo
+</div>
 
-<div class="logo">Huerta Urbana Patroclo</div>
+<div class="menu-icon" onclick="toggleMenu()">
+☰
+</div>
 
-<nav>
+<nav id="menu">
 
-<a href="index.html">Inicio</a>
-<a href="clima.html">Clima de la Zona</a>
-<a href="guardianes.html">Grupo de Guardianes</a>
+<ul>
+
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="guardianes.html">Guardianes</a></li>
+
+<li><a href="especies.html">Nuestras Especies</a></li>
+
+<li><a href="galeria.html">Galería</a></li>
+
+<li><a href="noticias.html">Noticias</a></li>
+
+<li><a href="#ubicacion">Ubicación</a></li>
+
+<li><a href="#contacto">Contáctanos</a></li>
+
+</ul>
 
 </nav>
 
@@ -35,295 +53,95 @@
 
 <section class="hero">
 
-<div class="hero-content">
-
-<h1>Huerta Urbana de Patroclo</h1>
+<h1>Huerta Urbana Patroclo</h1>
 
 <p>
-Un espacio donde la ciencia, la naturaleza y la comunidad se encuentran
-para cultivar sostenibilidad y aprendizaje.
+Un espacio de aprendizaje, biodiversidad y agricultura urbana
 </p>
 
-</div>
+<a href="especies.html" class="boton">
+
+Conoce nuestras especies
+
+</a>
 
 </section>
 
 
-<!-- BIENVENIDA -->
+<!-- INTRO -->
 
-<section class="bienvenida">
+<section class="intro">
 
-<div class="container">
-
-<h2>Bienvenidos a la Huerta Urbana de Patroclo</h2>
+<h2>Bienvenidos</h2>
 
 <p>
 
-La Huerta de Patroclo nace como una iniciativa del Grupo de Investigación
-en Agua y Energía de la Universidad Militar Nueva Granada con el propósito
-de fomentar la sostenibilidad ambiental, la inclusión social y la economía
-circular.
+La Huerta Urbana Patroclo es un proyecto enfocado
+en la promoción de la agricultura urbana,
+la sostenibilidad y el trabajo colaborativo
+entre estudiantes e investigadores.
 
-Desde su creación, este espacio se ha consolidado como un lugar de encuentro
-entre la comunidad universitaria, la ciencia y la naturaleza, donde la siembra,
-el cuidado y la cosecha se convierten en herramientas de aprendizaje,
-reflexión y compromiso ambiental.
+Este espacio permite aprender sobre cultivo,
+biodiversidad y cuidado del medio ambiente.
 
 </p>
-
-</div>
 
 </section>
 
 
-<!-- GUARDIANES + OBJETIVO -->
+<!-- UBICACIÓN -->
 
-<section class="guardianes">
+<section id="ubicacion">
 
-<div class="container guardianes-grid">
-
-<div class="guardianes-img">
-
-<img src="img/guardianes.jpg" alt="Guardianes de la Huerta">
-
-<a href="guardianes.html" class="btn">Conocer Guardianes</a>
-
-</div>
-
-<div class="objetivo">
-
-<h2>Objetivo</h2>
-
-<p>
-
-Compartir la experiencia de nuestra huerta: presentar las especies
-cultivadas, describir sus usos y aplicaciones, y mostrar cómo
-a través del trabajo colaborativo es posible construir una relación
-más consciente y responsable con el entorno.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- UBICACION -->
-
-<section class="ubicacion">
-
-<div class="container">
-
-<h2>Donde estamos Ubicados</h2>
-
-<div class="ubicacion-grid">
+<h2>📍 Dónde estamos ubicados</h2>
 
 <iframe
-src="https://www.google.com/maps?q=Universidad+Militar+Nueva+Granada+Bogotá&output=embed"
+src="https://maps.google.com/maps?q=universidad%20militar%20nueva%20granada&t=&z=15&ie=UTF8&iwloc=&output=embed"
 width="100%"
-height="350"
-style="border:0;border-radius:12px;"
-loading="lazy">
+height="450"
+style="border:0;">
 </iframe>
-
-
-
-<div class="ubicacion-texto">
-
-<p>
-
-La Universidad Militar Nueva Granada sede Bogotá se ubica en la localidad
-de Chapinero. El área presenta un clima frío de montaña con temperaturas
-frescas durante todo el año.
-
-</p>
-
-<a href="clima.html" class="btn">Ver clima de la zona</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- GALERIA -->
-
-<section class="galeria">
-
-<div class="container">
-
-<h2>Nuestra Huerta</h2>
-
-<div class="galeria-grid">
-
-<img src="img/planta1.jpg">
-<img src="img/planta2.jpg">
-<img src="img/planta3.jpg">
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ESPECIES -->
-
-<section class="especies">
-
-<div class="container">
-
-<h2>Nuestras Especies</h2>
-
-<div class="especies-grid">
-
-
-<div class="especie">
-<h3>Tomillo (Thymus vulgaris)</h3>
-<p>
-Tiene propiedades antibacterianas y expectorantes, por eso se usa en infusiones para aliviar la tos y resfriados.
-</p>
-<p>
-Es un excelente repelente natural de insectos si se siembra cerca de otras plantas.
-</p>
-<p>
-Su aroma intenso lo hace ideal para dar sabor a carnes, sopas y guisos.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Laurel (Laurus nobilis)</h3>
-<p>
-Es una planta aromática muy utilizada en la cocina tradicional.
-</p>
-<p>
-Sus hojas aportan un sabor profundo a sopas, salsas y guisos.
-</p>
-<p>
-También tiene propiedades digestivas y antiinflamatorias.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Menta (Mentha)</h3>
-<p>
-Es conocida por su aroma fresco y sus propiedades digestivas.
-</p>
-<p>
-Se utiliza en infusiones para aliviar molestias estomacales.
-</p>
-<p>
-También es común en bebidas refrescantes y recetas culinarias.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Poleo (Mentha pulegium)</h3>
-<p>
-El poleo es una planta aromática utilizada en infusiones.
-</p>
-<p>
-Es conocida por ayudar en problemas digestivos y respiratorios.
-</p>
-<p>
-Además, tiene propiedades relajantes.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Hierbabuena (Mentha spicata)</h3>
-<p>
-Muy utilizada en bebidas, infusiones y recetas tradicionales.
-</p>
-<p>
-Tiene propiedades digestivas y refrescantes.
-</p>
-<p>
-Su aroma es suave y muy agradable.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Limonaria (Cymbopogon citratus)</h3>
-<p>
-También conocida como hierba limón.
-</p>
-<p>
-Se utiliza en infusiones relajantes y digestivas.
-</p>
-<p>
-Su aroma cítrico ayuda a repeler insectos naturalmente.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Romero (Rosmarinus officinalis)</h3>
-<p>
-Es una planta aromática muy valorada en la cocina mediterránea.
-</p>
-<p>
-Tiene propiedades antioxidantes y estimulantes.
-</p>
-<p>
-También se utiliza en infusiones y remedios naturales.
-</p>
-</div>
-
-
-<div class="especie">
-<h3>Tomate (Solanum lycopersicum)</h3>
-<p>
-El tomate es uno de los cultivos más comunes en huertas urbanas.
-</p>
-<p>
-Es rico en vitaminas A y C, además de antioxidantes.
-</p>
-<p>
-Se utiliza ampliamente en ensaladas, salsas y muchas preparaciones culinarias.
-</p>
-</div>
-
-
-</div>
-
-</div>
 
 </section>
 
 
 <!-- CONTACTO -->
 
-<section class="contacto">
+<section id="contacto">
 
-<div class="container">
+<h2>📩 Contáctanos</h2>
 
-<h2>Contáctanos</h2>
+<form>
 
-<div class="redes">
+<input type="text" placeholder="Nombre" required>
 
-<img src="icons/spotify.png">
-<img src="icons/instagram.png">
-<img src="icons/facebook.png">
-<img src="icons/youtube.png">
-<img src="icons/maya.png">
+<input type="email" placeholder="Correo electrónico" required>
 
-</div>
+<textarea placeholder="Escribe tu mensaje"></textarea>
 
-</div>
+<button type="submit">
+
+Enviar mensaje
+
+</button>
+
+</form>
 
 </section>
 
+
+<footer>
+
+<p>
+
+Huerta Urbana Patroclo © 2026
+
+</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
 
 </body>
 
