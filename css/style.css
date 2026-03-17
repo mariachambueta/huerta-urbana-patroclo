@@ -2,14 +2,15 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: Arial, sans-serif;
 }
 
 body{
+font-family:Arial, sans-serif;
 background:#f4f6f7;
 color:#333;
 line-height:1.6;
 }
+
 
 /* HEADER */
 
@@ -18,110 +19,152 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 40px;
-background:#2f6f8f;
+background:#3f7c99;
 color:white;
 }
 
-nav ul{
-list-style:none;
-display:flex;
-gap:25px;
+.logo{
+font-size:18px;
+font-weight:500;
 }
 
 nav a{
+margin-left:20px;
 text-decoration:none;
 color:white;
-font-size:16px;
+font-size:15px;
 }
 
 nav a:hover{
-text-decoration:underline;
+opacity:0.8;
 }
+
 
 /* HERO */
 
 .hero{
-background:#d9e6ec;
-padding:100px 20px;
 text-align:center;
+padding:80px 20px;
+background:#eef4f7;
 }
 
 .hero h1{
 font-size:38px;
 color:#2f6f8f;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .hero p{
 font-size:18px;
-margin-bottom:25px;
 }
+
+
+/* BIENVENIDOS */
+
+.bienvenidos{
+padding:80px 20%;
+text-align:center;
+
+background-image:url("../img/fondo.jpg");
+background-size:cover;
+background-position:center;
+
+color:white;
+}
+
+.bienvenidos h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.bienvenidos p{
+margin-bottom:15px;
+}
+
+
+/* OBJETIVO */
+
+.objetivo{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:80px 15%;
+background:white;
+flex-wrap:wrap;
+}
+
+.objetivo-texto{
+max-width:500px;
+}
+
+.objetivo-texto h2{
+margin-bottom:15px;
+color:#2f6f8f;
+}
+
+.objetivo-imagen img{
+width:350px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
 
 /* BOTONES */
 
 .boton{
 display:inline-block;
-background:#4caf50;
+margin-top:15px;
+padding:8px 16px;
+background:#3f7c99;
 color:white;
-padding:10px 18px;
-border-radius:6px;
 text-decoration:none;
-font-size:15px;
+border-radius:5px;
+font-size:14px;
+transition:0.2s;
 }
 
 .boton:hover{
-background:#3e9442;
+background:#2f5f75;
 }
 
-/* SECCIONES TEXTO */
-
-.bienvenida,
-.objetivo{
-padding:60px 15%;
-text-align:center;
-background:white;
-}
-
-.bienvenida h2,
-.objetivo h2{
-color:#2f6f8f;
-margin-bottom:20px;
-}
 
 /* TARJETAS */
 
 .secciones{
 display:flex;
-gap:30px;
-padding:60px 10%;
 justify-content:center;
+gap:40px;
+padding:80px 10%;
+background:#f4f6f7;
 flex-wrap:wrap;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:10px;
-width:300px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
+padding:30px;
+width:260px;
 text-align:center;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 .card h3{
-color:#2f6f8f;
 margin-bottom:10px;
+color:#2f6f8f;
 }
 
 .card p{
 margin-bottom:15px;
 }
 
+
 /* UBICACION */
 
 #ubicacion{
-padding:60px 10%;
-background:white;
+padding:80px 10%;
 text-align:center;
+background:white;
 }
 
 #ubicacion h2{
@@ -129,11 +172,18 @@ margin-bottom:25px;
 color:#2f6f8f;
 }
 
+
 /* CONTACTO */
 
 #contacto{
-padding:60px 10%;
+padding:80px 10%;
 text-align:center;
+background:#f4f6f7;
+}
+
+#contacto h2{
+margin-bottom:20px;
+color:#2f6f8f;
 }
 
 form{
@@ -146,28 +196,32 @@ gap:10px;
 
 input, textarea{
 padding:10px;
-border-radius:5px;
 border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
 }
 
 button{
-background:#2f6f8f;
+background:#3f7c99;
 color:white;
 padding:10px;
 border:none;
 border-radius:5px;
 cursor:pointer;
+font-size:14px;
 }
 
 button:hover{
-background:#24566f;
+background:#2f5f75;
 }
+
 
 /* FOOTER */
 
 footer{
-background:#2f6f8f;
+background:#3f7c99;
 color:white;
 text-align:center;
 padding:15px;
+margin-top:40px;
 }
