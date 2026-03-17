@@ -10,30 +10,20 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
-
 
 <body>
 
+<!-- NAVBAR -->
 
-<!-- MENU SUPERIOR -->
+<header class="navbar">
 
-<header class="menu">
-
-<div class="logo">
-
-Huerta Urbana Patroclo
-
-</div>
+<div class="logo">Huerta Urbana Patroclo</div>
 
 <nav>
 
 <a href="index.html">Inicio</a>
-
 <a href="clima.html">Clima de la Zona</a>
-
 <a href="guardianes.html">Grupo de Guardianes</a>
 
 </nav>
@@ -41,84 +31,43 @@ Huerta Urbana Patroclo
 </header>
 
 
-
 <!-- HERO -->
 
 <section class="hero">
 
-<div class="overlay">
+<div class="hero-content">
+
+<h1>Huerta Urbana de Patroclo</h1>
+
+<p>
+Un espacio donde la ciencia, la naturaleza y la comunidad se encuentran
+para cultivar sostenibilidad y aprendizaje.
+</p>
 
 </div>
 
 </section>
-
 
 
 <!-- BIENVENIDA -->
 
 <section class="bienvenida">
 
-<h1>Bienvenidos a la Huerta Urbana de Patroclo</h1>
+<div class="container">
+
+<h2>Bienvenidos a la Huerta Urbana de Patroclo</h2>
 
 <p>
 
-La Huerta de Patroclo nace como una iniciativa del Grupo de Investigación en Agua y Energía de la Universidad Militar Nueva Granada, con el propósito de fomentar la sostenibilidad ambiental, la inclusión social y la economía circular.
+La Huerta de Patroclo nace como una iniciativa del Grupo de Investigación
+en Agua y Energía de la Universidad Militar Nueva Granada con el propósito
+de fomentar la sostenibilidad ambiental, la inclusión social y la economía
+circular.
 
-Desde su creación en el año 2024, este espacio se ha consolidado como un lugar de encuentro entre la comunidad universitaria, la ciencia y la naturaleza, donde la siembra, el cuidado y la cosecha se convierten en herramientas de aprendizaje, reflexión y compromiso ambiental.
-
-</p>
-
-</section>
-
-
-
-<!-- MENU INTERNO -->
-
-<section class="menuInterno">
-
-<a href="#guardianes">Conoce a Nuestros Guardianes</a>
-
-<a href="#objetivo">Objetivo</a>
-
-<a href="#ubicacion">Donde estamos Ubicados</a>
-
-<a href="#especies">Nuestras Especies</a>
-
-<a href="#contacto">Contáctanos</a>
-
-</section>
-
-
-
-<!-- GUARDIANES -->
-
-<section id="guardianes" class="guardianes">
-
-<div class="col">
-
-<h2>Conoce a Nuestros Guardianes</h2>
-
-<img src="img/guardianes.jpg">
-
-<button onclick="window.location.href='guardianes.html'">
-
-Click Aquí
-
-</button>
-
-</div>
-
-
-
-<div class="col">
-
-<h2 id="objetivo">Objetivo</h2>
-
-<p>
-
-Compartir la experiencia de nuestra huerta: presentar las especies que hemos cultivado, describir sus usos y aplicaciones, y mostrar cómo, a través del trabajo colaborativo, es posible construir una relación más consciente y responsable con el entorno.
-
-La Huerta de Patroclo es más que un proyecto: es una semilla de cambio que sigue creciendo y floreciendo gracias al esfuerzo colectivo y al amor por la tierra.
+Desde su creación, este espacio se ha consolidado como un lugar de encuentro
+entre la comunidad universitaria, la ciencia y la naturaleza, donde la siembra,
+el cuidado y la cosecha se convierten en herramientas de aprendizaje,
+reflexión y compromiso ambiental.
 
 </p>
 
@@ -126,23 +75,146 @@ La Huerta de Patroclo es más que un proyecto: es una semilla de cambio que sigu
 
 </section>
 
+
+<!-- GUARDIANES + OBJETIVO -->
+
+<section class="guardianes">
+
+<div class="container guardianes-grid">
+
+<div class="guardianes-img">
+
+<img src="img/guardianes.jpg" alt="Guardianes de la Huerta">
+
+<a href="guardianes.html" class="btn">Conocer Guardianes</a>
+
+</div>
+
+<div class="objetivo">
+
+<h2>Objetivo</h2>
+
+<p>
+
+Compartir la experiencia de nuestra huerta: presentar las especies
+cultivadas, describir sus usos y aplicaciones, y mostrar cómo
+a través del trabajo colaborativo es posible construir una relación
+más consciente y responsable con el entorno.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 
 <!-- UBICACION -->
 
-<section id="ubicacion" class="ubicacion">
+<section class="ubicacion">
+
+<div class="container">
 
 <h2>Donde estamos Ubicados</h2>
 
-<div class="contenidoUbicacion">
+<div class="ubicacion-grid">
 
-<iframe src="https://maps.google.com/maps?q=Universidad%20Militar%20Nueva%20Granada&t=&z=15&ie=UTF8&iwloc=&output=embed">
-
+<iframe
+src="https://maps.google.com/maps?q=universidad%20militar%20nueva%20granada&t=&z=15&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
-
-<div class="textoUbicacion">
+<div class="ubicacion-texto">
 
 <p>
 
-La Universidad Militar Nueva Granada sede Bogotá se ubica en la localidad de Chapinero, en una zona urbana de la ciudad
+La Universidad Militar Nueva Granada sede Bogotá se ubica en la localidad
+de Chapinero. El área presenta un clima frío de montaña con temperaturas
+frescas durante todo el año.
+
+</p>
+
+<a href="clima.html" class="btn">Ver clima de la zona</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALERIA -->
+
+<section class="galeria">
+
+<div class="container">
+
+<h2>Nuestra Huerta</h2>
+
+<div class="galeria-grid">
+
+<img src="img/planta1.jpg">
+<img src="img/planta2.jpg">
+<img src="img/planta3.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ESPECIES -->
+
+<section class="especies">
+
+<div class="container">
+
+<h2>Nuestras Especies</h2>
+
+<div class="especies-grid">
+
+<div class="especie">Tomillo</div>
+<div class="especie">Laurel</div>
+<div class="especie">Menta</div>
+<div class="especie">Poleo</div>
+<div class="especie">Hierbabuena</div>
+<div class="especie">Limonaria</div>
+<div class="especie">Romero</div>
+<div class="especie">Tomate</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACTO -->
+
+<section class="contacto">
+
+<div class="container">
+
+<h2>Contáctanos</h2>
+
+<div class="redes">
+
+<img src="icons/spotify.png">
+<img src="icons/instagram.png">
+<img src="icons/facebook.png">
+<img src="icons/youtube.png">
+<img src="icons/maya.png">
+
+</div>
+
+</div>
+
+</section>
+
+
+</body>
+
+</html>
