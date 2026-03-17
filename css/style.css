@@ -1,13 +1,9 @@
-/* RESET */
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, sans-serif;
 }
-
-/* BODY */
 
 body{
 background:#f4f6f7;
@@ -18,32 +14,13 @@ line-height:1.6;
 /* HEADER */
 
 header{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-background:#2f6f8f;
-
-color:white;
-
 padding:15px 40px;
-
-position:sticky;
-top:0;
-
-z-index:1000;
-
+background:#2f6f8f;
+color:white;
 }
-
-/* LOGO */
-
-.logo{
-font-size:22px;
-font-weight:bold;
-}
-
-/* MENU */
 
 nav ul{
 list-style:none;
@@ -55,47 +32,23 @@ nav a{
 text-decoration:none;
 color:white;
 font-size:16px;
-transition:0.3s;
 }
 
 nav a:hover{
-color:#d9f2ff;
-}
-
-/* MENU ICON */
-
-.menu-icon{
-display:none;
-font-size:28px;
-cursor:pointer;
+text-decoration:underline;
 }
 
 /* HERO */
 
 .hero{
-
-height:420px;
-
-background-image:url('../img/huerta1.jpg');
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
+background:#d9e6ec;
+padding:100px 20px;
 text-align:center;
-
-color:white;
-
-padding:20px;
-
 }
 
 .hero h1{
-font-size:42px;
+font-size:38px;
+color:#2f6f8f;
 margin-bottom:15px;
 }
 
@@ -104,197 +57,106 @@ font-size:18px;
 margin-bottom:25px;
 }
 
-/* BOTÓN */
+/* BOTONES */
 
 .boton{
-
-background:#4CAF50;
-
-padding:14px 28px;
-
-border-radius:8px;
-
-text-decoration:none;
-
+display:inline-block;
+background:#4caf50;
 color:white;
-
-font-weight:bold;
-
-transition:0.3s;
-
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-size:15px;
 }
 
 .boton:hover{
-background:#3e8e41;
+background:#3e9442;
 }
 
-/* INTRO */
+/* SECCIONES TEXTO */
 
-.intro{
-
+.bienvenida,
+.objetivo{
 padding:60px 15%;
-
 text-align:center;
-
 background:white;
-
 }
 
-.intro h2{
-font-size:30px;
+.bienvenida h2,
+.objetivo h2{
+color:#2f6f8f;
 margin-bottom:20px;
-}
-
-.intro p{
-font-size:18px;
-}
-
-/* GRID */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:30px;
-
-padding:50px 10%;
-
 }
 
 /* TARJETAS */
 
+.secciones{
+display:flex;
+gap:30px;
+padding:60px 10%;
+justify-content:center;
+flex-wrap:wrap;
+}
+
 .card{
-
 background:white;
-
+padding:25px;
 border-radius:10px;
-
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-padding:20px;
-
+width:300px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 text-align:center;
-
-transition:0.3s;
-
-}
-
-.card:hover{
-transform:translateY(-6px);
-}
-
-.card img{
-
-width:100%;
-
-border-radius:10px;
-
-margin-bottom:15px;
-
 }
 
 .card h3{
-margin-bottom:10px;
 color:#2f6f8f;
+margin-bottom:10px;
 }
 
-/* GALERIA */
-
-.grid img{
-width:100%;
-border-radius:10px;
-}
-
-/* NOTICIAS */
-
-.noticia{
-
-background:white;
-
-margin:40px 10%;
-
-padding:25px;
-
-border-radius:10px;
-
-box-shadow:0 3px 12px rgba(0,0,0,0.1);
-
+.card p{
+margin-bottom:15px;
 }
 
 /* UBICACION */
 
 #ubicacion{
-
 padding:60px 10%;
-
-text-align:center;
-
 background:white;
-
+text-align:center;
 }
 
 #ubicacion h2{
-margin-bottom:30px;
+margin-bottom:25px;
+color:#2f6f8f;
 }
 
 /* CONTACTO */
 
 #contacto{
-
 padding:60px 10%;
-
-background:#f9fbfc;
-
 text-align:center;
-
 }
 
 form{
-
-max-width:500px;
-
+max-width:400px;
 margin:auto;
-
 display:flex;
-
 flex-direction:column;
-
-gap:15px;
-
+gap:10px;
 }
 
 input, textarea{
-
-padding:12px;
-
-border-radius:6px;
-
+padding:10px;
+border-radius:5px;
 border:1px solid #ccc;
-
-font-size:15px;
-
 }
 
 button{
-
-padding:12px;
-
 background:#2f6f8f;
-
 color:white;
-
+padding:10px;
 border:none;
-
-border-radius:6px;
-
-font-size:16px;
-
+border-radius:5px;
 cursor:pointer;
-
-transition:0.3s;
-
 }
 
 button:hover{
@@ -304,36 +166,8 @@ background:#24566f;
 /* FOOTER */
 
 footer{
-
 background:#2f6f8f;
-
 color:white;
-
 text-align:center;
-
-padding:20px;
-
-margin-top:40px;
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-nav ul{
-display:none;
-flex-direction:column;
-background:#2f6f8f;
-position:absolute;
-top:70px;
-right:0;
-width:200px;
-padding:20px;
-}
-
-.menu-icon{
-display:block;
-}
-
+padding:15px;
 }
